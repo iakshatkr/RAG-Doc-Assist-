@@ -88,6 +88,11 @@ def print_results(results: List[RetrievedChunk]) -> None:
         print(f"   Text: {item.text}\n")
 
 
+def build_context(results: List[RetrievedChunk]) -> str:
+    texts = [item.text for item in results if item.text]
+    return "\n\n---\n\n".join(texts)
+
+
 def main() -> None:
     vectorstore_dir = Path(os.getenv("VECTORSTORE_DIR", str(DEFAULT_VECTORSTORE_DIR)))
     model_name = os.getenv("EMBED_MODEL", DEFAULT_MODEL_NAME)
@@ -103,6 +108,7 @@ def main() -> None:
     query_vector = embed_query(query, model)
     results = retrieve_top_chunks(index, chunks, query_vector, TOP_K)
     print_results(results)
+    _context = build_context(results)
 
 
 if __name__ == "__main__":
