@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, List
 
@@ -13,6 +14,14 @@ from sentence_transformers import SentenceTransformer
 DEFAULT_VECTORSTORE_DIR = Path(__file__).resolve().parent / "vectorstore"
 DEFAULT_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 TOP_K = 3
+
+
+@dataclass
+class RetrievedChunk:
+    score: float
+    source: str
+    page: int | str
+    text: str
 
 
 def load_vectorstore(vectorstore_dir: Path) -> tuple[faiss.Index, List[dict[str, Any]]]:
@@ -47,21 +56,36 @@ def search(index: faiss.Index, query_vector: np.ndarray, top_k: int) -> tuple[np
     return index.search(query_vector, top_k)
 
 
-def print_results(scores: np.ndarray, indices: np.ndarray, chunks: List[dict[str, Any]]) -> None:
-    print("\nTop 3 similar chunks:\n")
-    result_count = 0
-
-    for rank, (score, idx) in enumerate(zip(scores[0], indices[0]), start=1):
+def retrieve_top_chunks(
+    index: faiss.Index, chunks: List[dict[str, Any]], query_vector: np.ndarray, top_k: int
+) -> List[RetrievedChunk]:
+    scores, indices = search(index, query_vector, top_k)
+    results: List[RetrievedChunk] = []
+    for score, idx in zip(scores[0], indices[0]):
         if idx < 0 or idx >= len(chunks):
             continue
         chunk = chunks[idx]
-        print(f"{rank}. Score: {float(score):.4f}")
-        print(f"   Source: {chunk.get('source', 'unknown')} (page {chunk.get('page', '?')})")
-        print(f"   Text: {chunk.get('text', '').strip()}\n")
-        result_count += 1
+        results.append(
+            RetrievedChunk(
+                score=float(score),
+                source=str(chunk.get("source", "unknown")),
+                page=chunk.get("page", "?"),
+                text=str(chunk.get("text", "")).strip(),
+            )
+        )
+    return results
 
-    if result_count == 0:
+
+def print_results(results: List[RetrievedChunk]) -> None:
+    print("\nTop 3 similar chunks:\n")
+    if not results:
         print("No matching chunks found.")
+        return
+
+    for rank, item in enumerate(results, start=1):
+        print(f"{rank}. Score: {item.score:.4f}")
+        print(f"   Source: {item.source} (page {item.page})")
+        print(f"   Text: {item.text}\n")
 
 
 def main() -> None:
@@ -77,8 +101,8 @@ def main() -> None:
         return
 
     query_vector = embed_query(query, model)
-    scores, indices = search(index, query_vector, TOP_K)
-    print_results(scores, indices, chunks)
+    results = retrieve_top_chunks(index, chunks, query_vector, TOP_K)
+    print_results(results)
 
 
 if __name__ == "__main__":
