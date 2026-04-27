@@ -8,11 +8,13 @@ from typing import Any, List
 
 import faiss
 import numpy as np
+from openai import OpenAI
 from sentence_transformers import SentenceTransformer
 
 
 DEFAULT_VECTORSTORE_DIR = Path(__file__).resolve().parent / "vectorstore"
 DEFAULT_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
+DEFAULT_LLM_MODEL = "gpt-4o-mini"
 TOP_K = 3
 
 
@@ -93,9 +95,26 @@ def build_context(results: List[RetrievedChunk]) -> str:
     return "\n\n---\n\n".join(texts)
 
 
+def generate_answer_with_llm(client: OpenAI, llm_model: str, query: str, context: str) -> str:
+    messages = [
+        {
+            "role": "system",
+            "content": "You are a helpful assistant that answers questions using provided document context.",
+        },
+        {
+            "role": "user",
+            "content": f"Context:\n{context}\n\nQuestion:\n{query}",
+        },
+    ]
+    response = client.chat.completions.create(model=llm_model, messages=messages, temperature=0.0)
+    return (response.choices[0].message.content or "").strip()
+
+
 def main() -> None:
     vectorstore_dir = Path(os.getenv("VECTORSTORE_DIR", str(DEFAULT_VECTORSTORE_DIR)))
     model_name = os.getenv("EMBED_MODEL", DEFAULT_MODEL_NAME)
+    llm_model = os.getenv("OPENAI_MODEL", DEFAULT_LLM_MODEL)
+    openai_api_key = os.getenv("OPENAI_API_KEY")
 
     index, chunks = load_vectorstore(vectorstore_dir)
     model = SentenceTransformer(model_name)
@@ -108,7 +127,16 @@ def main() -> None:
     query_vector = embed_query(query, model)
     results = retrieve_top_chunks(index, chunks, query_vector, TOP_K)
     print_results(results)
-    _context = build_context(results)
+    context = build_context(results)
+
+    if not openai_api_key:
+        print("OPENAI_API_KEY is not set. Skipping LLM answer generation.")
+        return
+
+    client = OpenAI(api_key=openai_api_key)
+    answer = generate_answer_with_llm(client, llm_model, query, context)
+    print("\nLLM Answer:\n")
+    print(answer)
 
 
 if __name__ == "__main__":
