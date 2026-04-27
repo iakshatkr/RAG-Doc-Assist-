@@ -1,362 +1,50 @@
 [
   {
     "chunk_id": 0,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
+    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Akshat Kr Resume.pdf",
     "page": 1,
-    "text": "Vikas Bharti Bishunpur HDFC Parivartan at Latehar PreparedforVikasBhartiBishunpurCreatedbyNeeleshShekhar"
+    "text": "Akshat Kumar +91-7667280522 | akshat04kumar@gmail.com | LinkedIn | GitHub | LeetCode EXPERIENCE Vikas Bharti May 2024 – Jul 2024 Software Developer Intern Ranchi, Jharkhand • Implemented responsive web improvements for NGO platform, optimizing for low-bandwidth (3G) environments and improving engagement (bounce rate 70% → 45%) • Developed Node.js + MongoDB backend for managing beneficiary data across 5–7 programs and integrated RESTful APIs for structured frontend-backend communication • Applied"
   },
   {
     "chunk_id": 1,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 2,
-    "text": "Introduction LocatedinthestateofJharkhandineasternIndia,Latehardistrictisknownforitsnaturalbeauty,richhistory,andculturalheritage.Thedistrictcoversanareaof3,665squarekilometersandhasapopulationofaround725,673people,mostofwhomarefromtribalcommunities.Lateharishometoadiverserangeoffloraandfauna,includingdenseforests,waterfalls,andwildlife.Despiteitsnaturalbeauty,thedistrictfacesseveralsocio-economicchallengessuchaspoverty,lackofinfrastructure,limitedaccesstoeducationandhealthcare,andahighincidence"
+    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Akshat Kr Resume.pdf",
+    "page": 1,
+    "text": "across 5–7 programs and integrated RESTful APIs for structured frontend-backend communication • Applied lazy loading and image compression , reducing page load time by 25–30% and supporting digital initiatives reaching 5000+ beneficiaries Google Developer Student Club Sep 2024 – Jun 2025 Visual Media Head Ranchi, Jharkhand • Led visual media and content strategy for 10+ technical events, driving a 40–50% increase in student engagement through targeted promotions and branding • Collaborated with"
   },
   {
     "chunk_id": 2,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 2,
-    "text": "challengessuchaspoverty,lackofinfrastructure,limitedaccesstoeducationandhealthcare,andahighincidenceofmalnutrition.Inresponsetothesechallenges,theVikasBhartiBishunpurNGO,supportedbytheHDFCCSRfund,hasbeenworkingtirelesslytoimprovethequalityoflifeforthepeopleinthedistrict. OneofthekeyareasoffocusfortheVikasBhartiBishunpurNGOhasbeentodevelopsustainableagriculturepracticesthatcanhelpthelocalfarmersincreasetheiryieldandimprovetheirincome.Inaddition,theNGOhasbeenworkingonchilddevelopmentinitiatives,an"
+    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Akshat Kr Resume.pdf",
+    "page": 1,
+    "text": "a 40–50% increase in student engagement through targeted promotions and branding • Collaborated with sponsors and startup teams to promote developer tools and applications, enabling 100+ students to explore and adopt platforms through guided sessions and campaigns • Utilized analytics and content tools to optimize campaigns and track engagement metrics, aligning technical content with developer workflows PROJECTS Greenvolt Nexus | React.js, Node.js, Express.js, MongoDB, Jwt, Mapbox Jan 2025 -"
   },
   {
     "chunk_id": 3,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 2,
-    "text": "reasetheiryieldandimprovetheirincome.Inaddition,theNGOhasbeenworkingonchilddevelopmentinitiatives,andtheuseofmoderntechnologiesforHorticultureandAnimalHusbandry. Throughthisstudy,weaimtodocumenttheimpactofthevariousinitiativesundertakenbytheVikasBhartiBishunpurNGOintheLatehardistrict.Wewillexplorethechallengesfacedbythecommunity,theinnovativesolutionsimplementedbytheNGO,andtheoutcomesoftheseinitiatives.Thecasestudywillprovidevaluableinsightsintothestrategiesthatcanbeemployedtoimprovethelivesofru"
+    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Akshat Kr Resume.pdf",
+    "page": 1,
+    "text": "developer workflows PROJECTS Greenvolt Nexus | React.js, Node.js, Express.js, MongoDB, Jwt, Mapbox Jan 2025 - Sep 2025 • Designed and developed a full-stack EV charging platform using React, Node.js, Express, and MongoDB, enabling real-time station discovery and booking across 3 user roles (Admin, Owner, User) • Implemented JWT-based authentication and role-based access control , securing multiple workflows and managing 10+ REST API endpoints for bookings, payments, and user operations •"
   },
   {
     "chunk_id": 4,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 2,
-    "text": "tives.ThecasestudywillprovidevaluableinsightsintothestrategiesthatcanbeemployedtoimprovethelivesofruralcommunitiesinIndiaandcreateasustainablefutureforall. Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
+    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Akshat Kr Resume.pdf",
+    "page": 1,
+    "text": "multiple workflows and managing 10+ REST API endpoints for bookings, payments, and user operations • Engineered booking system with slot validation and conflict detection to prevent double-bookings, and integrated Mapbox-based analytics dashboards for EV charging workflows RAG Document Assistant | Python, Faiss, LangChain, LLM APIs Aug 2025 - Oct 2025 • Built a RAG system for context-aware querying over 50+ documents using LLM APIs • Implemented ingestion, chunking, and embedding pipeline ,"
   },
   {
     "chunk_id": 5,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 3,
-    "text": "OurVisittoLateharonthe22ndand23rdofAprilincludedvisitstoinitiativesbyVikasBharatispanningovermorethan10villagesacrossthedistrict,specificallyaroundtheGaruBlock.InthepresenceofAshutosh,AssistantProjectManager,VikasBhartiweinteractedwiththelocalstounderstandthedemographics,thebeforeanda\u0000ereﬀectsoftheinitiativesandwhatcanbeimprovedinthecurrentprocessforanevenmoresustainablefuture. ThemodusoperandiofVikasBhartiincludesthepromotionofSHG(SelfHelpGroups)acrossthevillagesbyprovidingshelters,animalsandva"
+    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Akshat Kr Resume.pdf",
+    "page": 1,
+    "text": "querying over 50+ documents using LLM APIs • Implemented ingestion, chunking, and embedding pipeline , generating 500+ chunks stored in FAISS for efficient retrieval • Designed end-to-end workflow (query → top-3 retrieval → response), optimizing chunking and similarity search for improved answer relevance API Throttling Engine | Node.js, Express.js, Middleware, In-Memory caching Dec 2025 - Jan 2026 • Developed rate limiting middleware using Node.js and Express to control API traffic and prevent"
   },
   {
     "chunk_id": 6,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 3,
-    "text": "ikasBhartiincludesthepromotionofSHG(SelfHelpGroups)acrossthevillagesbyprovidingshelters,animalsandvariousmachineryforthesustainablegrowthofthetribals.Theorganizationfirmlybelievesthatgrowthcanhappenonlywhenthepeoplebenefitingareequallyinvestedintheeconomicsoftheinitiatives,asthisincreasesthesenseofresponsibilityforthebeneficiary. Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
+    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Akshat Kr Resume.pdf",
+    "page": 1,
+    "text": "2026 • Developed rate limiting middleware using Node.js and Express to control API traffic and prevent abuse • Implemented fixed-window rate limiting enforcing 100 requests/min per user with efficient in-memory tracking • Designed request flow: request → validation → limit check → allow/block, ensuring consistent performance under concurrent requests TECHNICAL SKILLS Languages: C, C++, JavaScript (ES6+), SQL Backend: Node.js, Express.js, REST APIs, JWT Authentication, Middleware, API Design"
   },
   {
     "chunk_id": 7,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 4,
-    "text": "Below are the details for the initiatives, those visited by us during the 2 day visit. 1. Promotion of women Based Group Enterprisea. Gram:Surkumib. NumberofPeople:10c. SHGName:SarnaSHGd. MonthofInitiation: March,2023 SurkumivillageinLatehardistrictisasmallandvibrantcommunitywherethewomenandgirlshavebeenstrugglingtomakeendsmeetduetothelackofjobopportunitiesinthearea.However,therecentinterventionbytheNGOVikasBhartiBishunpurhasbroughtaglimmerofhopetothecommunity. Duringmyvisit,Ihadtheopportunityto"
-  },
-  {
-    "chunk_id": 8,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 4,
-    "text": "theNGOVikasBhartiBishunpurhasbroughtaglimmerofhopetothecommunity. Duringmyvisit,IhadtheopportunitytowitnesstheimpactoftheNGO'sinitiativefirsthand.Theprovisionoftwosewingmachinesandtwosalleafplatemakermachineshasopenedupnewavenuesofincomegenerationforthewomenandgirlsinthearea.Thewomenarenowabletoutilizetheirskillstocreatebeautifulhandcra\u0000editemsandearnasustainablelivelihoodforthemselvesandtheirfamilies. Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 9,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 5,
-    "text": "Agroup10consistingonlyofwomenwereprovidedwithadequatemachineryandmultipleworkshopsforthemtobeabletocorrectlyusethemachineryandunderstandtheprocessaheadofmakingtheplates.TheprocesstocreatetheSalleafplateistostitchthedryleavestogether,bigenoughtobeturnedtoaplate,andthenusetheMoldingmachinetogiveittheshapeofaplate. Theinitiativehasnotonlyprovidedeconomicopportunitiesbutalsoempoweredthewomenandgirlsinthearea.Theyarenowabletocontributetotheirfamilies'incomeandfeelasenseofself-worthandindependence.Mor"
-  },
-  {
-    "chunk_id": 10,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 5,
-    "text": "thearea.Theyarenowabletocontributetotheirfamilies'incomeandfeelasenseofself-worthandindependence.Moreover,thegirlsinthecommunitycannowseetheirmothersandotherwomeninthecommunityengaginginproductiveactivities,whichcanmotivatethemtopursuesimilaropportunitiesinthefuture. Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 11,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 6,
-    "text": "2. Promotion of women Based Group Enterprise -2 Gram:BaribandhNumberofPeople:10SHGName:MahuaSHGMonthofInitiation: March,2023 Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 12,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 7,
-    "text": "Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 13,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 8,
-    "text": "3. Support to Backyard Poultry BeneficiaryName:SunitaDeviSizeofPoultry:1Cockand4HenGram:SurkumiMonthofInitiation:March,2023 ThisinitiativeimplementedbytheNGOwasthedistributionof4Henand1CocktothebeneficiarySunitaDevi.OnecanclearlyseethepositiveimpactofthisinitiativeonthehomeofalocalfamilywhohadreceivedfourhensandonecockfromtheNGO.ThefamilyhadsetupasmallcoopprovidedbyVikasBhartiintheirbackyardandweretakingcareofthepoultrywithgreatenthusiasm.Thehensproducedeggswhichnotonlyprovidedasourceofproteinfo"
-  },
-  {
-    "chunk_id": 14,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 8,
-    "text": "etakingcareofthepoultrywithgreatenthusiasm.Thehensproducedeggswhichnotonlyprovidedasourceofproteinforthefamilybutalsogeneratedadditionalincomewhensoldinthelocalmarket.ItwasevidentthatthesmallinterventionbytheNGOhadasignificantimpactonthelivesofthepeopleinthecommunity.Itishearteningtoseehowasimpleinitiativecouldpositivelyimpactthelivesofthoseinneed. Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 15,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 9,
-    "text": "4. Support to Backyard Poultry -2 BeneficiaryName:LeelavatiDeviSizeofPoultry:1Cockand4HenGram:SurkumiMonthofInitiation:March,2023 Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 16,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 10,
-    "text": "5. Development of Vermicompost Unit BeneficiaryName:GaneshOraonSizeofPoultry:10x4VermicompostUnitGram:LuhurtahnrMonthofInitiation:October,2022 Oneofthemanyinitiativesistheprovisionofshelterandwormsforavermicompostunit,alongwithtrainingforthebeneficiary.TheNGOprovidestheshelterandwormswhilethebeneficiaryconstructstheunitthemselves,creatingasenseofmutualinvolvementandresponsibilitytowardstheinitiative. Throughthisinitiative,thebeneficiaryisabletocreateorganicfertilizerandearnasteadysourceofincomeb"
-  },
-  {
-    "chunk_id": 17,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 10,
-    "text": "ve. Throughthisinitiative,thebeneficiaryisabletocreateorganicfertilizerandearnasteadysourceofincomebysellingitinthelocalmarket.Inaddition,theinitiativepromotessustainablefarmingpracticesandreduceswaste.ThetrainingprovidedbytheNGOequipsthebeneficiarywiththenecessaryknowledgeandskillstoeﬀectivelymanagethevermicompostunit. Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 18,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 11,
-    "text": "Overall,thisinitiativeisatestamenttotheVikasBhartiBishunpurNGO'scommitmenttoimprovingthelivelihoodsofthelocalcommunityinasustainablemanner,whilealsofosteringasenseofownershipandresponsibilityamongbeneficiaries. Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 19,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 12,
-    "text": "6. Vermi Compost Unit -2 BeneficiaryName:NaroDeviSizeofPoultry:VermicompostUnitGram:HesagMonthofInitiation:October,2022 Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 20,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 13,
-    "text": "7. Promotion of Horticulture Livelihood model BeneficiaryName:SanjeetOraonSizeofPoultry:MangoPlantationGram:PurnihesagMonthofInitiation:October,2022 TheVikasBhartiBishunpurNGOinJharkhandhasbeenworkingtopromotehorticultureinthelocalcommunitythroughvariousinitiatives.Onesuchinitiativeistheprovisionofboundaryandmangoseedsforamangoplantation,withthebeneficiaryresponsibleforconstructingtheunitthemselves. Thisinitiativenotonlypromotessustainablefarmingpractices,butalsoprovidesasteadysourceofincomefort"
-  },
-  {
-    "chunk_id": 21,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 13,
-    "text": "s. Thisinitiativenotonlypromotessustainablefarmingpractices,butalsoprovidesasteadysourceofincomeforthebeneficiarythroughthesaleofmangoesinthelocalmarket.Theprovisionofboundariesalsoensuresthattheplantationisprotectedfromdamagebyanimalsorotherexternalfactors. Theinvolvementofthebeneficiaryintheconstructionoftheplantationunitfostersasenseofresponsibilityandownershiptowardstheinitiative,furtherpromotingitssustainability.ThetrainingandguidanceprovidedbytheVikasBhartiBishunpurNGOequipthebeneficiarywi"
-  },
-  {
-    "chunk_id": 22,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 13,
-    "text": "ingitssustainability.ThetrainingandguidanceprovidedbytheVikasBhartiBishunpurNGOequipthebeneficiarywiththenecessaryknowledgeandskills Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 23,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 14,
-    "text": "toeﬀectivelymanagetheplantation. Overall,thisinitiativeisatestamenttotheVikasBhartiBishunpurNGO'scommitmenttopromotingsustainableagricultureandimprovingthelivelihoodsofthelocalcommunity.Italsoshowcasestheimportanceofinvolvingbeneficiariesintheimplementationofinitiativestoensuretheirsuccessandsustainability. Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 24,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 15,
-    "text": "8. Promotion of Horticulture Livelihood model -2 BeneficiaryName:MangoPlantationGram:BaribandhMonthofInitiation:October,2022 Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 25,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 16,
-    "text": "Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 26,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 17,
-    "text": "9. Custom Hiring Center Gram:KarwaiMonthofInitiation:March,2023 VikasBhartiBishunpurhasbeenimplementinginitiativestopromotemoderntechnologyuseinagricultureinthelocalcommunity.OnesuchinitiativeistheprovisionofequipmentforacustomhiringcenterforagricultureinthevillageofKarwai. Thecustomhiringcenterallowsfarmersinthecommunitytoaccessmodernfarmingequipment,suchaswatertanksandPressurepumps,thattheymaynotbeabletoaﬀordontheirown.Thisenablesthemtoimprovetheeﬀiciencyandproductivityoftheirfarmingoperations"
-  },
-  {
-    "chunk_id": 27,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 17,
-    "text": "tbeabletoaﬀordontheirown.Thisenablesthemtoimprovetheeﬀiciencyandproductivityoftheirfarmingoperations,leadingtohigheryieldsandincreasedincome. TheequipmentprovidedbytheVikasBhartiBishunpurNGOisofhighqualityandmaintainedregularlytoensureitsoptimalperformance.TheNGOalsoprovidestrainingandguidancetofarmersonhowtousetheequipmenteﬀectivelyandsafely. Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 28,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 18,
-    "text": "Overall,thisinitiativeisatestamenttotheVikasBhartiBishunpurNGO'scommitmenttopromotingmoderntechnologyuseinagricultureandimprovingthelivelihoodsofthelocalcommunity.Byprovidingaccesstohigh-qualityequipmentandtraining,theNGOishelpingfarmerstoincreasetheirproductivityandincome,leadingtoamoresustainableandprosperouscommunity. Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 29,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 19,
-    "text": "10. Promotion of Water Resource Development BeneficiaryName:KaramdevSinghVillage:KuiDetailsofWell:10x25feetMonthofInitiation:March,2022 Onesuchinitiativeistheprovisionofawellof10x25feetinavillageknownforitswaterscarcity.Thewellservesasareliablesourceofwaterforthecommunity,particularlyduringperiodsofdroughtorwatershortage.Thisinitiativenotonlyprovidesaccesstocleanandsafewaterfordailyuse,butalsopromotessustainableagriculturebyenablingfarmerstoirrigatetheircropsthroughouttheyear. Theconstructionoft"
-  },
-  {
-    "chunk_id": 30,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 19,
-    "text": "otessustainableagriculturebyenablingfarmerstoirrigatetheircropsthroughouttheyear. Theconstructionofthewellisdonewithhigh-qualitymaterialsandundertheguidanceofexperiencedprofessionalstoensureitssafetyanddurability.TheVikasBhartiBishunpurNGOalsoprovidestrainingtothecommunityonthepropermaintenanceandmanagementofthewelltoensureitslong-termsustainability. Overall,thisinitiativeisatestamenttotheVikasBhartiBishunpurNGO'scommitmenttoimprovingthelivelihoodsofthelocalcommunitythroughthepromotionofwaterres"
-  },
-  {
-    "chunk_id": 31,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 19,
-    "text": "rtiBishunpurNGO'scommitmenttoimprovingthelivelihoodsofthelocalcommunitythroughthepromotionofwaterresourcedevelopment.Byprovidingaccesstoareliablesourceofwater,theNGOishelpingtoaddresstheissueofwaterscarcityinthearea,leadingtoamoresustainableandprosperouscommunity. Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 32,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 20,
-    "text": "Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 33,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 21,
-    "text": "11. Established of Nutritional Garden in Homestead Land BeneficiaryName:KaramdevSinghVillage:BaribandhDetailsofWell:10x25feetMonthofInitiation:March,2022 TheVikasBhartiBishunpurNGOinJharkhandhasbeenworkingtopromotehorticultureandimprovethelivelihoodsofthelocalcommunitythroughvariousinitiatives.OnesuchinitiativeistheprovisionoffencingandseedsforaNutritionalGardenintheHomesteadLand. TheNutritionalGardenisaninnovativeapproachtoaddresstheissueofmalnutritioninthecommunity.Itpromotesthecultivationofad"
-  },
-  {
-    "chunk_id": 34,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 21,
-    "text": "rdenisaninnovativeapproachtoaddresstheissueofmalnutritioninthecommunity.Itpromotesthecultivationofadiverserangeoffruitsandvegetablesthatarerichinnutrientsandvitamins,ensuringabalancedandhealthydietforthecommunitymembers. Theprovisionoffencingensuresthatthegardenisprotectedfromdamagebyanimalsorotherexternalfactors,whilethehigh-qualityseedsensuretheoptimalgrowthofthecrops.TheVikasBhartiBishunpur Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 35,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 22,
-    "text": "NGOalsoprovidestrainingandguidanceonthepropermaintenanceandmanagementofthegarden,enablingthecommunitymemberstomaximizetheiryieldsandincome. Overall,thisinitiativeisatestamenttotheVikasBhartiBishunpurNGO'scommitmenttopromotingsustainableagricultureandimprovingthenutritionalstatusofthelocalcommunity.Byprovidingaccesstohigh-qualityseedsandfencing,theNGOishelpingtoaddresstheissueofmalnutritionwhilealsopromotingbetterlivelihoodsthroughhorticulture. Copyright2023MadeBy:NeeleshShekharforVikasBhartiBish"
-  },
-  {
-    "chunk_id": 36,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 22,
-    "text": "opromotingbetterlivelihoodsthroughhorticulture. Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 37,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 23,
-    "text": "12. Promotion of Solar Based Irrigation BeneficiaryName:KamleshOraonVillage:KolamAreaCovered:7AcresMonthofInitiation:March,2022 VikasBhartiBishunpurhasbeenworkingtopromotesustainableagriculturethroughvariousinitiatives.Onesuchinitiativeistheprovisionofsolarequipmentforthepromotionofsolar-basedirrigationoveralandareaof7acres. Theuseofsolar-basedirrigationisasustainableandeco-friendlyapproachtoirrigatingcrops,asitreliesonrenewableenergyandreducesthecarbonfootprintassociatedwithtraditionalirrigatio"
-  },
-  {
-    "chunk_id": 38,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 23,
-    "text": "atingcrops,asitreliesonrenewableenergyandreducesthecarbonfootprintassociatedwithtraditionalirrigationmethods.ThesolarequipmentprovidedbytheVikasBhartiBishunpurNGOensurestheeﬀicientutilizationofsolarenergyfortheirrigationofcrops,reducingtherelianceonnon-renewableenergysourcesandenablingfarmerstocultivatecropsthroughouttheyear. Theinitiativehashadasignificantimpactonthelocalcommunity,asithasenabledfarmerstoincreasetheircropyieldsandimprovetheirlivelihoodsthroughsustainableagriculture.TheVikasBhart"
-  },
-  {
-    "chunk_id": 39,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 23,
-    "text": "armerstoincreasetheircropyieldsandimprovetheirlivelihoodsthroughsustainableagriculture.TheVikasBhartiBishunpurNGOprovidestrainingandguidanceonthepropermaintenanceandmanagementofthesolarequipmenttoensureitslong-termsustainability. Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 40,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 24,
-    "text": "Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 41,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 25,
-    "text": "13. Smart School Intervention Village:KolamAreaCovered:7AcresMonthofInitiation:October,2022 TheVikasBhartiBishunpurNGOinJharkhandhasbeenworkingtowardsimprovingthequalityofeducationinruralareasbyconvertingtraditionalclassroomsintosmartclassrooms.Throughthisinitiative,theNGOhasbeeninstallingprojectorpanels,computers,andotherdigitalequipmentinclassroomstomakethemmoreinteractiveandengagingforstudents. Byusingmoderntechnology,thesmartclassroomsprovidestudentswithamoreimmersivelearningexperience,allow"
-  },
-  {
-    "chunk_id": 42,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 25,
-    "text": "Byusingmoderntechnology,thesmartclassroomsprovidestudentswithamoreimmersivelearningexperience,allowingthemtounderstandcomplexconceptsmoreeasily.Theuseofdigitalmediaandeducationalso\u0000warealsomakesiteasierforteacherstoteachandassessstudents,whichleadstobetteracademicoutcomes. TheinitiativetoconverttraditionalclassroomsintosmartclassroomsisalignedwiththeUnitedNations'SustainableDevelopmentGoalsofensuringqualityeducationforall.Thisinitiativeisparticularlyimportantinruralareaswhereaccesstoqualityeduc"
-  },
-  {
-    "chunk_id": 43,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 25,
-    "text": "ringqualityeducationforall.Thisinitiativeisparticularlyimportantinruralareaswhereaccesstoqualityeducationislimited,andtraditionalteachingmethodsareo\u0000en Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 44,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 26,
-    "text": "inadequate. TheVikasBhartiBishunpurNGOseﬀortsinthisregardarecommendable,astheyarenotonlyimprovingthequalityofeducationinruralareasbutalsobridgingthedigitaldividebetweenurbanandruralareas.Throughthisinitiative,theNGOiscreatingalevelplayingfieldforstudentsinruralareas,givingthemaccesstothesameresourcesandopportunitiesastheirurbancounterparts. Overall,theinitiativetoconverttraditionalclassroomsintosmartclassroomsisanimportantsteptowardsensuringqualityeducationforallinruralareas,andtheVikasBhartiBis"
-  },
-  {
-    "chunk_id": 45,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 26,
-    "text": "artclassroomsisanimportantsteptowardsensuringqualityeducationforallinruralareas,andtheVikasBhartiBishunpurNGO'seﬀortsinthisregardaremakingasignificantimpact. Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 46,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 27,
-    "text": "14. Innovation of Anganwadi Centre Village:GoendiAreaCovered:7AcresMonthofInitiation:March,2022 TheVikasBhartiBishunpurNGOinJharkhandisdedicatedtoimprovingthelivesofpeopleinruralareasthroughvariousinitiatives.Oneofitsnotableinitiativesistheinnovationofanganwadicenters,whicharegovernment-runchildcareanddevelopmentcentersinvillages. TheNGOhasbeenworkingtowardsimprovingtheinfrastructureandfacilitiesofthesecenters,makingthemmorechild-friendlyandconducivetoearlychildhoodlearninganddevelopment.Theaimo"
-  },
-  {
-    "chunk_id": 47,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 27,
-    "text": "fthesecenters,makingthemmorechild-friendlyandconducivetoearlychildhoodlearninganddevelopment.Theaimofthisinitiativeistoprovidequalityearlychildhoodeducationandcaretochildreninruralareas,whichisessentialfortheiroveralldevelopment. TheVikasBhartiBishunpurNGOhasalsobeenworkingtowardsthetrainingandcapacity-buildingofanganwadiworkers,toensurethattheyareequippedwiththenecessaryskillsandknowledgetoprovidequalitycareandeducationtochildren.TheNGOhasbeenconductingtrainingprogrammesandworkshopsforanganwadi"
-  },
-  {
-    "chunk_id": 48,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 27,
-    "text": "equalitycareandeducationtochildren.TheNGOhasbeenconductingtrainingprogrammesandworkshopsforanganwadiworkersonvarioustopicsrelatedtochilddevelopment,nutrition,andhealth. Throughthisinitiative,theVikasBhartiBishunpurNGOismakingasignificantimpactonthelivesofchildreninruralareasbyprovidingthemwithaccesstoqualityearlychildhoodeducationandcare.ThisinitiativeisalignedwiththeUnitedNations'SustainableDevelopmentGoalsofensuringinclusiveandqualityeducationforall,aswellaspromotinggenderequalityandempowering"
-  },
-  {
-    "chunk_id": 49,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 27,
-    "text": "opmentGoalsofensuringinclusiveandqualityeducationforall,aswellaspromotinggenderequalityandempoweringwomenandgirls,asamajorityofanganwadiworkersarewomen. Innovationofanganwadicentresisanimportantsteptowardsensuringabrightfutureforthechildrenofruralareas,andtheVikasBhartiBishunpurNGO'seﬀortsinthisregardarecommendable. Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 50,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 28,
-    "text": "Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 51,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 29,
-    "text": "15. Promotion of Goat farming Village:MonthofInitiation: TheVikasBhartiBishunpurNGOinJharkhandhasbeenworkingtowardspromotingsustainableagricultureandimprovingthelivelihoodsofthelocalcommunitythroughvariousinitiatives.Onesuchinitiativeistheprovisionofgoatsandsheltersforthepromotionofgoatfarmingaspartofanimalhusbandry. Goatfarmingisanimportantaspectofanimalhusbandry,asitprovidesasourceofincomeforfarmersthroughthesaleofmilk,meatandothergoatproducts.Itisalsoaviableandsustainablealternativetotraditio"
-  },
-  {
-    "chunk_id": 52,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 29,
-    "text": "mersthroughthesaleofmilk,meatandothergoatproducts.Itisalsoaviableandsustainablealternativetotraditionallivestockfarming,asgoatsrequirelesslandandresourcestomaintainthanlargeranimalslikecows. TheVikasBhartiBishunpurNGOprovidesgoatsandshelterstofarmers,enablingthemtostarttheirowngoatfarmingbusinesses.Theinitiativehashadasignificantimpactonthelocalcommunity,asithasenabledfarmerstoincreasetheirincomeandimprovetheirlivelihoodsthroughsustainableanimalhusbandrypractices. TheVikasBhartiBishunpurNGOprovi"
-  },
-  {
-    "chunk_id": 53,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 29,
-    "text": "ndimprovetheirlivelihoodsthroughsustainableanimalhusbandrypractices. TheVikasBhartiBishunpurNGOprovidestrainingandguidanceonthepropermaintenanceandmanagementofgoatsandshelterstoensuretheirlong-termsustainability.Theinitiativenotonlypromotessustainableanimalhusbandrypracticesbutalsohelpsingeneratingemploymentopportunitiesinruralareas. Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 54,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 30,
-    "text": "Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 55,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 31,
-    "text": "16. Promotion of Cow Farming Village:MonthofInitiation: TheVikasBhartiBishunpurNGOinJharkhandhasbeenworkingtopromotesustainableagricultureandimprovethelivelihoodsofthelocalcommunitythroughvariousinitiatives.Onesuchinitiativeistheprovisionofcowsandsheltersforthepromotionofcowfarming. Cowfarmingisanimportantaspectofsustainableagriculture,asitprovidesasourceofincomeforfarmersthroughthesaleofmilkanddairyproducts,whilealsopromotingorganicfarmingpracticesthroughtheuseofcowmanureasfertilizer.TheVikasBh"
-  },
-  {
-    "chunk_id": 56,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 31,
-    "text": "iryproducts,whilealsopromotingorganicfarmingpracticesthroughtheuseofcowmanureasfertilizer.TheVikasBhartiBishunpurNGOprovidescowsandshelterstofarmers,enablingthemtostarttheirowncowfarmingbusinesses. Theinitiativehashadasignificantimpactonthelocalcommunity,asithasenabledfarmerstoincreasetheirincomeandimprovetheirlivelihoodsthroughsustainableagriculture.TheVikasBhartiBishunpurNGOprovidestrainingandguidanceonthepropermaintenanceandmanagementofthecowsandshelterstoensuretheirlong-termsustainability. C"
-  },
-  {
-    "chunk_id": 57,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 31,
-    "text": "idanceonthepropermaintenanceandmanagementofthecowsandshelterstoensuretheirlong-termsustainability. Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 58,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 32,
-    "text": "Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
-  },
-  {
-    "chunk_id": 59,
-    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Case-study-of-HRDP.pdf",
-    "page": 33,
-    "text": "Finish Copyright2023MadeBy:NeeleshShekharforVikasBhartiBishunpur"
+    "source": "D:\\IMP Files\\RAG Doc Assist\\data\\Akshat Kr Resume.pdf",
+    "page": 1,
+    "text": "JavaScript (ES6+), SQL Backend: Node.js, Express.js, REST APIs, JWT Authentication, Middleware, API Design Databases: MongoDB, Mongoose AI/ML: Retrieval-Augmented Generation (RAG), LLM APIs, Vector Search (FAISS), Embeddings Tools: Git, GitHub, VS Code, Postman, Docker (Basics), Chrome DevTools Relevant Coursework: Object-Oriented Programming, Operating Systems, Cloud Computing EDUCATION Sarala Birla University, Ranchi 2022 – 2026 B.Tech - Computer Science and Engineering Ranchi, Jharkhand"
   }
 ]

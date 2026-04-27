@@ -5,7 +5,7 @@ import os
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable, List
-
+import re
 import faiss
 import numpy as np
 from pypdf import PdfReader
@@ -71,14 +71,43 @@ def load_pdf_texts(data_dir: Path) -> List[ChunkRecord]:
 def chunk_text(text: str, size: int, overlap: int) -> Iterable[str]:
     if overlap >= size:
         raise ValueError("CHUNK_OVERLAP must be smaller than CHUNK_SIZE.")
-    step = size - overlap
-    for start in range(0, len(text), step):
-        end = start + size
-        chunk = text[start:end].strip()
-        if chunk:
-            yield chunk
-        if end >= len(text):
+    words = text.split()
+    if not words:
+        return
+
+    i = 0
+    n = len(words)
+    while i < n:
+        # Build one chunk up to ~size characters while keeping whole words.
+        chunk_words: List[str] = []
+        chunk_len = 0
+        j = i
+        while j < n:
+            word = words[j]
+            candidate_len = chunk_len + (1 if chunk_words else 0) + len(word)
+            if chunk_words and candidate_len > size:
+                break
+            chunk_words.append(word)
+            chunk_len = candidate_len
+            j += 1
+
+        if not chunk_words:
+            # Handle edge case: a single token longer than chunk size.
+            chunk_words = [words[i]]
+            j = i + 1
+
+        yield " ".join(chunk_words)
+
+        if j >= n:
             break
+
+        # Move start forward but keep ~overlap characters from the end.
+        overlap_chars = 0
+        back = len(chunk_words) - 1
+        while back >= 0 and overlap_chars < overlap:
+            overlap_chars += len(chunk_words[back]) + (1 if overlap_chars > 0 else 0)
+            back -= 1
+        i = max(i + 1, i + back + 1)
 
 
 def embed_texts(texts: List[str], model_name: str) -> np.ndarray:
@@ -141,3 +170,13 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+def clean_text(text):
+    # Add space between lowercase and uppercase (common PDF issue)
+    text = re.sub(r'([a-z])([A-Z])', r'\1 \2', text)
+    
+    # Add space between words and numbers
+    text = re.sub(r'([a-zA-Z])(\d)', r'\1 \2', text)
+    text = re.sub(r'(\d)([a-zA-Z])', r'\1 \2', text)
+    
+    return text
