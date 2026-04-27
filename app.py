@@ -90,6 +90,24 @@ def print_results(results: List[RetrievedChunk]) -> None:
         print(f"   Text: {item.text}\n")
 
 
+def print_sources(results: List[RetrievedChunk]) -> None:
+    print("\nSources used:\n")
+    if not results:
+        print("No sources available.")
+        return
+
+    seen: set[tuple[str, int | str]] = set()
+    source_rank = 1
+    for item in results:
+        file_name = Path(item.source).name
+        key = (file_name, item.page)
+        if key in seen:
+            continue
+        seen.add(key)
+        print(f"{source_rank}. {file_name} (page {item.page})")
+        source_rank += 1
+
+
 def build_context(results: List[RetrievedChunk]) -> str:
     texts = [item.text for item in results if item.text]
     return "\n\n---\n\n".join(texts)
@@ -145,8 +163,9 @@ def main() -> None:
 
     client = OpenAI(api_key=openai_api_key)
     answer = generate_answer_with_llm(client, llm_model, query, context)
-    print("\nLLM Answer:\n")
+    print("\nFinal Answer:\n")
     print(answer)
+    print_sources(results)
 
 
 if __name__ == "__main__":
