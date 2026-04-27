@@ -26,6 +26,14 @@ class RetrievedChunk:
     text: str
 
 
+@dataclass
+class AppConfig:
+    vectorstore_dir: Path
+    embed_model: str
+    llm_model: str
+    openai_api_key: str | None
+
+
 def load_vectorstore(vectorstore_dir: Path) -> tuple[faiss.Index, List[dict[str, Any]]]:
     index_path = vectorstore_dir / "index.faiss"
     chunks_path = vectorstore_dir / "chunks.json"
@@ -138,31 +146,45 @@ def generate_answer_with_llm(client: OpenAI, llm_model: str, query: str, context
     return (response.choices[0].message.content or "").strip()
 
 
-def main() -> None:
-    vectorstore_dir = Path(os.getenv("VECTORSTORE_DIR", str(DEFAULT_VECTORSTORE_DIR)))
-    model_name = os.getenv("EMBED_MODEL", DEFAULT_MODEL_NAME)
-    llm_model = os.getenv("OPENAI_MODEL", DEFAULT_LLM_MODEL)
-    openai_api_key = os.getenv("OPENAI_API_KEY")
+def run_retrieval(query: str, index: faiss.Index, chunks: List[dict[str, Any]], model: SentenceTransformer) -> List[RetrievedChunk]:
+    query_vector = embed_query(query, model)
+    return retrieve_top_chunks(index, chunks, query_vector, TOP_K)
 
-    index, chunks = load_vectorstore(vectorstore_dir)
-    model = SentenceTransformer(model_name)
+
+def run_rag_answer(query: str, results: List[RetrievedChunk], api_key: str, llm_model: str) -> str:
+    context = build_context(results)
+    client = OpenAI(api_key=api_key)
+    return generate_answer_with_llm(client, llm_model, query, context)
+
+
+def load_config() -> AppConfig:
+    return AppConfig(
+        vectorstore_dir=Path(os.getenv("VECTORSTORE_DIR", str(DEFAULT_VECTORSTORE_DIR))),
+        embed_model=os.getenv("EMBED_MODEL", DEFAULT_MODEL_NAME),
+        llm_model=os.getenv("OPENAI_MODEL", DEFAULT_LLM_MODEL),
+        openai_api_key=os.getenv("OPENAI_API_KEY"),
+    )
+
+
+def main() -> None:
+    config = load_config()
+
+    index, chunks = load_vectorstore(config.vectorstore_dir)
+    model = SentenceTransformer(config.embed_model)
 
     query = input("Enter your question: ").strip()
     if not query:
         print("Query is empty. Please enter a valid question.")
         return
 
-    query_vector = embed_query(query, model)
-    results = retrieve_top_chunks(index, chunks, query_vector, TOP_K)
+    results = run_retrieval(query, index, chunks, model)
     print_results(results)
-    context = build_context(results)
 
-    if not openai_api_key:
+    if not config.openai_api_key:
         print("OPENAI_API_KEY is not set. Skipping LLM answer generation.")
         return
 
-    client = OpenAI(api_key=openai_api_key)
-    answer = generate_answer_with_llm(client, llm_model, query, context)
+    answer = run_rag_answer(query, results, config.openai_api_key, config.llm_model)
     print("\nFinal Answer:\n")
     print(answer)
     print_sources(results)
