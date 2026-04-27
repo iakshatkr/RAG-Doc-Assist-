@@ -96,14 +96,24 @@ def build_context(results: List[RetrievedChunk]) -> str:
 
 
 def generate_answer_with_llm(client: OpenAI, llm_model: str, query: str, context: str) -> str:
+    system_prompt = (
+        "You are a retrieval-augmented assistant. Use only the provided context. "
+        "If the answer is not present in the context, respond exactly with: "
+        "\"The answer is not available in the provided documents.\" "
+        "Keep the answer concise, well-structured, and factual. Do not hallucinate."
+    )
     messages = [
         {
             "role": "system",
-            "content": "You are a helpful assistant that answers questions using provided document context.",
+            "content": system_prompt,
         },
         {
             "role": "user",
-            "content": f"Context:\n{context}\n\nQuestion:\n{query}",
+            "content": (
+                "Answer the question based strictly on this context.\n\n"
+                f"Context:\n{context}\n\n"
+                f"Question:\n{query}"
+            ),
         },
     ]
     response = client.chat.completions.create(model=llm_model, messages=messages, temperature=0.0)
