@@ -8,6 +8,7 @@ from typing import Any, List
 
 import faiss
 import numpy as np
+from dotenv import load_dotenv
 from openai import OpenAI
 from sentence_transformers import SentenceTransformer
 
@@ -158,6 +159,7 @@ def run_rag_answer(query: str, results: List[RetrievedChunk], api_key: str, llm_
 
 
 def load_config() -> AppConfig:
+    load_dotenv()
     return AppConfig(
         vectorstore_dir=Path(os.getenv("VECTORSTORE_DIR", str(DEFAULT_VECTORSTORE_DIR))),
         embed_model=os.getenv("EMBED_MODEL", DEFAULT_MODEL_NAME),
