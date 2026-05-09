@@ -49,10 +49,11 @@ def load_pdf_texts(data_dir: Path) -> List[ChunkRecord]:
         reader = PdfReader(str(pdf_path))
         for page_index, page in enumerate(reader.pages, start=1):
             raw_text = page.extract_text() or ""
-            clean_text = " ".join(raw_text.split())
-            if not clean_text:
+            normalized_text = clean_text(raw_text)
+            normalized_text = " ".join(normalized_text.split())
+            if not normalized_text:
                 continue
-            for chunk in chunk_text(clean_text, CHUNK_SIZE, CHUNK_OVERLAP):
+            for chunk in chunk_text(normalized_text, CHUNK_SIZE, CHUNK_OVERLAP):
                 records.append(
                     ChunkRecord(
                         chunk_id=chunk_id,
@@ -145,6 +146,17 @@ def save_artifacts(index: faiss.Index, records: List[ChunkRecord], output_dir: P
         json.dump(metadata, f, ensure_ascii=False, indent=2)
 
 
+def clean_text(text: str) -> str:
+    # Add space between lowercase and uppercase (common PDF issue)
+    text = re.sub(r'([a-z])([A-Z])', r'\1 \2', text)
+    
+    # Add space between words and numbers
+    text = re.sub(r'([a-zA-Z])(\d)', r'\1 \2', text)
+    text = re.sub(r'(\d)([a-zA-Z])', r'\1 \2', text)
+    
+    return text
+
+
 def main() -> None:
     data_dir = resolve_data_dir()
     output_dir = Path(os.getenv("VECTORSTORE_DIR", str(DEFAULT_OUTPUT_DIR)))
@@ -170,13 +182,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
-def clean_text(text):
-    # Add space between lowercase and uppercase (common PDF issue)
-    text = re.sub(r'([a-z])([A-Z])', r'\1 \2', text)
-    
-    # Add space between words and numbers
-    text = re.sub(r'([a-zA-Z])(\d)', r'\1 \2', text)
-    text = re.sub(r'(\d)([a-zA-Z])', r'\1 \2', text)
-    
-    return text
